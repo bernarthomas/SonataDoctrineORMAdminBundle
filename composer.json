@@ -25,7 +25,7 @@
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^7.3 || ^8.0",
         "doctrine/doctrine-bundle": "^1.8 || ^2.0",
         "doctrine/orm": "^2.5",
         "doctrine/persistence": "^1.3.4 || ^2.0",
@@ -53,6 +53,12 @@
     "provide": {
         "sonata-project/admin-bundle-persistency-layer": "1.0.0"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/bernarthomas/EntityAuditBundle.git"
+        }
+    ],
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.4",
         "phpstan/extension-installer": "^1.0",
